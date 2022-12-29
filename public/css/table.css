@@ -1,0 +1,65 @@
+    .fixTableHead {
+        overflow-y: auto;
+        height: calc(100vh - 210px);
+    }
+    
+    .fixTableHead thead th {
+        position: sticky;
+        top: 0;
+    }
+    
+    .fixTableHead tbody tr:hover{
+        background-color: rgba(180, 180, 180, 0.25);
+    }
+
+    table {
+        border-collapse: collapse;        
+        width: 100%;
+    }
+    
+    th,
+    td {
+        padding: 8px 15px;
+    }
+    
+    th {
+        background: #fff;
+        padding: 18px 14px;
+    }
+
+    .btn-table-default{
+        background-color: #f8f9fa;
+        color: #339933;
+        border: 1px solid #339933;
+    }
+
+    .btn-table-default:hover,
+    .btn-table-default:active{
+        background-color: #339933;
+        color: #fff;
+    }
+
+    .btn-table-danger{
+        background-color: #f8f9fa;
+        color: #da2d2d;
+        border: 1px solid #da2d2d;
+    }
+
+    .btn-table-danger:hover,
+    .btn-table-danger:active{
+        background-color: #da2d2d;
+        color: #fff;
+    }
+
+
+    .btn-table-aqua{
+        background-color: #fff;
+        color: #2BAFA8;
+        border: 1px solid #2BAFA8;
+    }
+
+    .btn-table-aqua:hover,
+    .btn-table-aqua:active{
+        background-color: #2BAFA8;
+        color: #fff;
+    }

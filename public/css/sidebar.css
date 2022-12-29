@@ -1,0 +1,152 @@
+:root {
+    --main-white: #ffffff;
+    --main-light: #f8f9fa;
+    --main-green: #339933;
+    --main-light-green: #9ACC00;
+    --main-yellow: #FF9A00;
+    --main-light-blue: #00AFEF;
+    --main-aqua: #2BAFA8;
+    --main-pink: #D83F60;
+    --main-light-grey: #D9D9D9;
+    --main-grey: #595959;
+    --main-dark-grey: #212121;
+    --normal-font-size: 1rem;
+    --z-fixed: 100;
+}
+
+body {
+  background-color: var(--main-light-grey) !important;
+}
+
+:focus {outline:0 !important;}
+
+/* Colors */
+.text-green{
+    color: var(--main-green);   
+}
+
+.circle-icon {
+  background: var(--main-aqua);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  vertical-align: middle;
+  padding: 12px;
+}
+
+
+/* Main Content */
+
+#main {
+  transition: margin-left .5s;
+}
+
+#main {
+  margin-left: 260px;
+}
+
+#mainContentNavbar{
+  z-index: 999;
+}
+
+/*
+   * Sidebar
+   */
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main-grey); 
+  border-radius: 10px;
+}
+
+#sidebarMenuLinkDiv{
+  position: relative;
+  height: calc(100% - 50px) !important;
+  overflow-y: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 150;
+  /* Behind the navbar */
+  padding-top: 15px;/* Height of navbar */
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#sidebarMenu{
+  width: 260px;
+}
+
+#sidebarMenu{
+  transition: width .5s;
+}
+
+#sideBarBtn{
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+
+@media (max-width: 767.98px) {
+  .sidebar {
+      top: 5rem;
+  }
+  
+  #sideBarBtn{
+    margin-left: 0px;
+  }
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+  font-weight: light;
+  color: var(--main-dark-grey);
+}
+
+.sidebar .nav-link.active {
+  color: var(--main-yellow);
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+  
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/* Custom Font Size */
+.fs-7 {
+  font-size: 0.8rem !important;
+}
+
+.fs-8 {
+  font-size: 0.7rem !important;
+}
+
+.fs-9 {
+  font-size: 0.6rem !important;
+}
+
+.fs-10 {
+  font-size: 0.3rem !important;
+}
